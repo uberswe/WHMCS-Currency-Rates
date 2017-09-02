@@ -44,4 +44,4 @@ function anveto_currency_rates_update()
     Anveto_Hooks::get_instance()->update();
 }
 
-add_hook("DailyCronJob",1,"anveto_currency_rates_update");
+add_hook("AfterCronJob",1,"anveto_currency_rates_update");
